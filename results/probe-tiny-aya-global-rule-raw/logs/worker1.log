@@ -1,0 +1,316 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:03<15:41,  3.26s/it]Loading weights:  37%|███▋      | 108/290 [00:03<00:04, 43.21it/s]Loading weights:  48%|████▊     | 138/290 [00:04<00:03, 45.86it/s]Loading weights:  54%|█████▍    | 157/290 [00:04<00:03, 43.24it/s]Loading weights:  59%|█████▊    | 170/290 [00:04<00:02, 47.44it/s]Loading weights:  63%|██████▎   | 182/290 [00:05<00:02, 43.51it/s]Loading weights:  66%|██████▌   | 191/290 [00:05<00:02, 45.77it/s]Loading weights:  69%|██████▊   | 199/290 [00:05<00:02, 43.35it/s]Loading weights:  71%|███████   | 206/290 [00:05<00:01, 44.26it/s]Loading weights:  73%|███████▎  | 212/290 [00:05<00:01, 42.49it/s]Loading weights:  76%|███████▌  | 219/290 [00:05<00:01, 45.47it/s]Loading weights:  78%|███████▊  | 227/290 [00:06<00:01, 40.02it/s]Loading weights:  80%|████████  | 232/290 [00:06<00:01, 39.76it/s]Loading weights:  82%|████████▏ | 237/290 [00:06<00:01, 40.60it/s]Loading weights:  84%|████████▍ | 245/290 [00:06<00:00, 46.74it/s]Loading weights:  87%|████████▋ | 251/290 [00:06<00:00, 46.33it/s]Loading weights:  89%|████████▉ | 259/290 [00:06<00:00, 51.92it/s]Loading weights:  91%|█████████▏| 265/290 [00:06<00:00, 53.78it/s]Loading weights:  93%|█████████▎| 271/290 [00:07<00:00, 43.37it/s]Loading weights:  95%|█████████▌| 276/290 [00:07<00:00, 38.15it/s]Loading weights:  98%|█████████▊| 283/290 [00:07<00:00, 43.81it/s]Loading weights: 100%|██████████| 290/290 [00:07<00:00, 39.29it/s]
+run 4a20f6fa: 4409 rows, 23 shards, 4409 rows to do. layers=[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35] max_tokens=8192
+  shard 1: 25/200 rows
+  shard 1: 50/200 rows
+  shard 1: 75/200 rows
+  shard 1: 100/200 rows
+  shard 1: 125/200 rows
+  shard 1: 150/200 rows
+  shard 1: 175/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#24; retrying shorter
+  shard 1: 200/200 rows
+shard 1/23: 200/200 ok, 1 shortened (1 after running out of memory), 1.04s/row, about 73 min left
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#42; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#48; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#50; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#60; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#70; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#80; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#84; retrying shorter
+  shard 2: 25/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#92; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#98; retrying shorter
+  shard 2: 50/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#144; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#162; retrying shorter
+  shard 2: 75/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#212; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#220; retrying shorter
+  shard 2: 100/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#236; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#244; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#254; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#262; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#272; retrying shorter
+  shard 2: 125/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#290; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#300; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#308; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#312; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#314; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#328; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#332; retrying shorter
+  shard 2: 150/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#338; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#354; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#382; retrying shorter
+  shard 2: 175/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#406; retrying shorter
+  shard 2: 200/200 rows
+shard 2/23: 200/200 ok, 29 shortened (29 after running out of memory), 1.48s/row, about 99 min left
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#450; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#452; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#454; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#474; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#478; retrying shorter
+  shard 3: 25/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#494; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#496; retrying shorter
+  shard 3: 50/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#542; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#552; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#560; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#570; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#578; retrying shorter
+  shard 3: 75/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#592; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#604; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#616; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#626; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#628; retrying shorter
+  shard 3: 100/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#650; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#674; retrying shorter
+  shard 3: 125/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#694; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#720; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#732; retrying shorter
+  shard 3: 150/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#762; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#774; retrying shorter
+  shard 3: 175/200 rows
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#812; retrying shorter
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#824; retrying shorter
+  shard 3: 200/200 rows
+shard 3/23: 200/200 ok, 26 shortened (26 after running out of memory), 1.62s/row, about 103 min left
+  out of memory at 8192 tokens on plain|agentdojo-traj/workspace.json#848; retrying shorter
+  shard 4: 25/200 rows
+  shard 4: 50/200 rows
+  shard 4: 75/200 rows
+  shard 4: 100/200 rows
+  shard 4: 125/200 rows
+  shard 4: 150/200 rows
+  shard 4: 175/200 rows
+  shard 4: 200/200 rows
+shard 4/23: 200/200 ok, 1 shortened (1 after running out of memory), 1.48s/row, about 89 min left
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#24; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#42; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#48; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#50; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#60; retrying shorter
+  shard 5: 25/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#70; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#80; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#84; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#92; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#98; retrying shorter
+  shard 5: 50/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#144; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#162; retrying shorter
+  shard 5: 75/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#212; retrying shorter
+  shard 5: 100/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#220; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#236; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#244; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#254; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#262; retrying shorter
+  shard 5: 125/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#272; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#290; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#300; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#308; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#312; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#314; retrying shorter
+  shard 5: 150/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#328; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#332; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#338; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#354; retrying shorter
+  shard 5: 175/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#382; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#406; retrying shorter
+  shard 5: 200/200 rows
+shard 5/23: 200/200 ok, 30 shortened (30 after running out of memory), 1.57s/row, about 89 min left
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#450; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#452; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#454; retrying shorter
+  shard 6: 25/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#474; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#478; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#494; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#496; retrying shorter
+  shard 6: 50/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#542; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#552; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#560; retrying shorter
+  shard 6: 75/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#570; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#578; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#592; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#604; retrying shorter
+  shard 6: 100/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#616; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#626; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#628; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#650; retrying shorter
+  shard 6: 125/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#674; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#694; retrying shorter
+  shard 6: 150/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#720; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#732; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#762; retrying shorter
+  shard 6: 175/200 rows
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#774; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#812; retrying shorter
+  shard 6: 200/200 rows
+shard 6/23: 200/200 ok, 25 shortened (25 after running out of memory), 1.63s/row, about 87 min left
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#824; retrying shorter
+  out of memory at 8192 tokens on masked|agentdojo-traj/workspace.json#848; retrying shorter
+  shard 7: 25/200 rows
+  shard 7: 50/200 rows
+  shard 7: 75/200 rows
+  shard 7: 100/200 rows
+  shard 7: 125/200 rows
+  shard 7: 150/200 rows
+  shard 7: 175/200 rows
+  shard 7: 200/200 rows
+shard 7/23: 200/200 ok, 2 shortened (2 after running out of memory), 1.53s/row, about 77 min left
+  shard 8: 25/200 rows
+  shard 8: 50/200 rows
+  shard 8: 75/200 rows
+  shard 8: 100/200 rows
+  shard 8: 125/200 rows
+  shard 8: 150/200 rows
+  shard 8: 175/200 rows
+  shard 8: 200/200 rows
+shard 8/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.44s/row, about 67 min left
+  shard 9: 25/200 rows
+  shard 9: 50/200 rows
+  shard 9: 75/200 rows
+  shard 9: 100/200 rows
+  shard 9: 125/200 rows
+  shard 9: 150/200 rows
+  shard 9: 175/200 rows
+  shard 9: 200/200 rows
+shard 9/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.34s/row, about 58 min left
+  shard 10: 25/200 rows
+  shard 10: 50/200 rows
+  shard 10: 75/200 rows
+  shard 10: 100/200 rows
+  shard 10: 125/200 rows
+  shard 10: 150/200 rows
+  shard 10: 175/200 rows
+  shard 10: 200/200 rows
+shard 10/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.25s/row, about 50 min left
+  shard 11: 25/200 rows
+  shard 11: 50/200 rows
+  shard 11: 75/200 rows
+  shard 11: 100/200 rows
+  shard 11: 125/200 rows
+  shard 11: 150/200 rows
+  shard 11: 175/200 rows
+  shard 11: 200/200 rows
+shard 11/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.18s/row, about 44 min left
+  shard 12: 25/200 rows
+  shard 12: 50/200 rows
+  shard 12: 75/200 rows
+  shard 12: 100/200 rows
+  shard 12: 125/200 rows
+  shard 12: 150/200 rows
+  shard 12: 175/200 rows
+  shard 12: 200/200 rows
+shard 12/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.13s/row, about 38 min left
+  shard 13: 25/200 rows
+  shard 13: 50/200 rows
+  shard 13: 75/200 rows
+  shard 13: 100/200 rows
+  shard 13: 125/200 rows
+  shard 13: 150/200 rows
+  shard 13: 175/200 rows
+  shard 13: 200/200 rows
+shard 13/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.07s/row, about 32 min left
+  shard 14: 25/200 rows
+  shard 14: 50/200 rows
+  shard 14: 75/200 rows
+  shard 14: 100/200 rows
+  shard 14: 125/200 rows
+  shard 14: 150/200 rows
+  shard 14: 175/200 rows
+  shard 14: 200/200 rows
+shard 14/23: 200/200 ok, 0 shortened (0 after running out of memory), 1.02s/row, about 27 min left
+  shard 15: 25/200 rows
+  shard 15: 50/200 rows
+  shard 15: 75/200 rows
+  shard 15: 100/200 rows
+  shard 15: 125/200 rows
+  shard 15: 150/200 rows
+  shard 15: 175/200 rows
+  shard 15: 200/200 rows
+shard 15/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.98s/row, about 23 min left
+  shard 16: 25/200 rows
+  shard 16: 50/200 rows
+  shard 16: 75/200 rows
+  shard 16: 100/200 rows
+  shard 16: 125/200 rows
+  shard 16: 150/200 rows
+  shard 16: 175/200 rows
+  shard 16: 200/200 rows
+shard 16/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.94s/row, about 19 min left
+  shard 17: 25/200 rows
+  shard 17: 50/200 rows
+  shard 17: 75/200 rows
+  shard 17: 100/200 rows
+  shard 17: 125/200 rows
+  shard 17: 150/200 rows
+  shard 17: 175/200 rows
+  shard 17: 200/200 rows
+shard 17/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.91s/row, about 15 min left
+  shard 18: 25/200 rows
+  shard 18: 50/200 rows
+  shard 18: 75/200 rows
+  shard 18: 100/200 rows
+  shard 18: 125/200 rows
+  shard 18: 150/200 rows
+  shard 18: 175/200 rows
+  shard 18: 200/200 rows
+shard 18/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.89s/row, about 12 min left
+  shard 19: 25/200 rows
+  shard 19: 50/200 rows
+  shard 19: 75/200 rows
+  shard 19: 100/200 rows
+  shard 19: 125/200 rows
+  shard 19: 150/200 rows
+  shard 19: 175/200 rows
+  shard 19: 200/200 rows
+shard 19/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.87s/row, about 9 min left
+  shard 20: 25/200 rows
+  shard 20: 50/200 rows
+  shard 20: 75/200 rows
+  shard 20: 100/200 rows
+  shard 20: 125/200 rows
+  shard 20: 150/200 rows
+  shard 20: 175/200 rows
+  shard 20: 200/200 rows
+shard 20/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.84s/row, about 6 min left
+  shard 21: 25/200 rows
+  shard 21: 50/200 rows
+  shard 21: 75/200 rows
+  shard 21: 100/200 rows
+  shard 21: 125/200 rows
+  shard 21: 150/200 rows
+  shard 21: 175/200 rows
+  shard 21: 200/200 rows
+shard 21/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.82s/row, about 3 min left
+  shard 22: 25/200 rows
+  shard 22: 50/200 rows
+  shard 22: 75/200 rows
+  shard 22: 100/200 rows
+  shard 22: 125/200 rows
+  shard 22: 150/200 rows
+  shard 22: 175/200 rows
+  shard 22: 200/200 rows
+shard 22/23: 200/200 ok, 0 shortened (0 after running out of memory), 0.80s/row, about 0 min left
+shard 23/23: 9/9 ok, 0 shortened (0 after running out of memory), 0.80s/row, about 0 min left
+done

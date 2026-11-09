@@ -1,0 +1,9 @@
+# Laptop side (data prep, baselines, AuditKIT scoring, charts, label sheets). Python 3.12+.
+# The GPU steps run on Kaggle; their notebooks install SafeTune and their own packages.
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+detect-secrets==1.5.0
+auditkit @ git+https://github.com/Lexsi-Labs/AuditKIT@9da5838e61ef54d560a37605ddbcb19aceded9b3
+curatorkit @ git+https://github.com/Lexsi-Labs/CuratorKIT@cee1aed21d14992f650c5dfe09094b9625d0ce87

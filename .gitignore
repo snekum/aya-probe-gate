@@ -1,0 +1,17 @@
+# Local Python environment: rebuild with requirements.txt
+.venv/
+__pycache__/
+*.pyc
+
+# ToolSafe is fetched at a pinned commit (see README, "Set up"). Its scripts contain hardcoded
+# API keys, so it never goes in this repo.
+vendor/ToolSafe/
+
+# Rebuilt by scripts/make_kaggle_bundle.py
+kaggle/tsbench-probe-bundle.zip
+
+# Kaggle download zips: the same files are unpacked in results/
+results/*.zip
+
+# Cached activations live on Kaggle (several GB)
+acts/

@@ -1,0 +1,70 @@
+{
+  "pipeline_config_hash": "tsbench-probe-curate-check-v1",
+  "run_timestamp": "2026-11-08T14:33:04.504324Z",
+  "source_files": [],
+  "stage_counts": {
+    "ExactDeduplicator (step)": {
+      "input_count": 5401,
+      "output_count": 5353
+    },
+    "ExactDeduplicator (action, AgentDojo)": {
+      "input_count": 1220,
+      "output_count": 1215
+    },
+    "MinHashDeduplicator (action, train+test)": {
+      "input_count": 918,
+      "output_count": 833
+    },
+    "SecretsGate (report only)": {
+      "input_count": 7182,
+      "output_count": 7163,
+      "rejected_count": 19
+    }
+  },
+  "rejected_breakdown": {
+    "secret_detected:Hex High Entropy String": 19
+  },
+  "dedup_stats": {},
+  "minhash_threshold": null,
+  "sampler_stats": null,
+  "token_stats": {
+    "total_prompt_tokens": 0,
+    "total_completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "wall_clock_seconds": 189.412,
+  "tool_versions": {
+    "curatorkit": "0.1.21",
+    "python": "3.14.3"
+  },
+  "diversity_stats": null,
+  "diagnostic_stats": null,
+  "diagnostic_files": [],
+  "provenance": {
+    "schema": "lexsi.provenance/1",
+    "library": "curatorkit",
+    "version": "0.1.21",
+    "git_sha": null,
+    "created_at": "2026-11-08T14:33:04Z",
+    "base_model": null,
+    "method": "audit",
+    "inputs": [
+      {
+        "kind": "dataset",
+        "ref": "ToolSafe TS-Bench @ 237fddba18c962fd68b7bc3a49b25726b7dfb73f",
+        "config": null,
+        "provenance": null
+      }
+    ],
+    "params": {
+      "checks": [
+        "ExactDeduplicator (step)",
+        "ExactDeduplicator (action, AgentDojo)",
+        "MinHashDeduplicator (action, train+test)",
+        "SecretsGate (report only)"
+      ],
+      "minhash_threshold": 0.85,
+      "mode": "report only; no rows removed from data/"
+    }
+  }
+}

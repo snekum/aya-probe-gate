@@ -1,0 +1,21 @@
+{
+ "model": "CohereLabs/tiny-aya-global",
+ "probes": "/kaggle/working/results/probe-tiny-aya-global",
+ "out": "/kaggle/working/results/gate-tiny-aya-global",
+ "data": "data",
+ "stages": "judge",
+ "threshold": "safe_block_5",
+ "refusal_layer": "sweep",
+ "alphas": "0.5,1,1.5,2,3",
+ "calib_n": 16,
+ "max_prompt_tokens": 4096,
+ "max_new_tokens": 200,
+ "xstest_new_tokens": 200,
+ "n_agent": 0,
+ "xstest_max": 0,
+ "batch": 8,
+ "dtype": "float16",
+ "device": "cuda:0",
+ "judge_model": "",
+ "judge_dtype": "float16"
+}

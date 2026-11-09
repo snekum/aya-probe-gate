@@ -1,0 +1,59 @@
+{
+ "step_duplicates": {
+  "groups": 28,
+  "rows_in_groups": 76,
+  "by_source": {
+   "agentdojo-traj": 4,
+   "asb-traj": 24
+  },
+  "label_conflicts": [],
+  "groups_spanning_train_and_test": 0
+ },
+ "action_duplicates_agentdojo": {
+  "groups": 5,
+  "rows_in_groups": 10,
+  "groups_with_both_labels": 0,
+  "rows_in_conflicting_groups": 0,
+  "conflicting_by_tool": {},
+  "examples": []
+ },
+ "test_near_copies_of_train": {
+  "threshold": 0.85,
+  "test_rows": 315,
+  "flagged": 0,
+  "train_rows": 603,
+  "train_near_copies_within_train": 66,
+  "test_near_copies_within_test": 19,
+  "flagged_with_same_label_as_match": 0,
+  "by_test_tool": {},
+  "pairs": []
+ },
+ "secrets": {
+  "rows_scanned": 7182,
+  "rows_flagged": 19,
+  "by_source": {
+   "agentharm-traj": 16,
+   "asb-traj": 3
+  },
+  "by_type": {
+   "Hex High Entropy String": 19
+  },
+  "example_ids": [
+   "agentharm-traj/benign_steps.json#8",
+   "agentharm-traj/benign_steps.json#26",
+   "agentharm-traj/benign_steps.json#52",
+   "agentharm-traj/benign_steps.json#64",
+   "agentharm-traj/benign_steps.json#69",
+   "agentharm-traj/benign_steps.json#83",
+   "agentharm-traj/benign_steps.json#112",
+   "agentharm-traj/benign_steps.json#113",
+   "agentharm-traj/benign_steps.json#128",
+   "agentharm-traj/benign_steps.json#134",
+   "agentharm-traj/benign_steps.json#140",
+   "agentharm-traj/benign_steps.json#147",
+   "agentharm-traj/benign_steps.json#160",
+   "agentharm-traj/benign_steps.json#166",
+   "agentharm-traj/benign_steps.json#171"
+  ]
+ }
+}
