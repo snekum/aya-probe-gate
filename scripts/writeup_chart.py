@@ -13,7 +13,7 @@ GATES = [('none', 'No gate', (8, -4), 'left'),
          ('cast', 'CAST steering\n(reads the prompt)', (8, -4), 'left'),
          ('block', 'Hard block', (8, 2), 'left'),
          ('redirect', 'Steer back', (8, -4), 'left'),
-         ('recheck', 'Steer back,\ncheck again', (-10, -4), 'right')]
+         ('recheck', 'Steer back,\ncheck again', (8, -14), 'left')]
 
 
 def main():

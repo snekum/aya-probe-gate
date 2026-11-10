@@ -11,7 +11,7 @@ import argparse, glob, os, re, zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS = ['probe_format.py', 'build_cache_inputs.py', 'cache_activations.py', 'train_probe.py',
            'gate.py', 'eval_gate.py', 'audit_gate.py', 'redirect_vector.py', 'threshold_curve.py',
-           'prepare_data.py', 'score_probe.py', 'baselines.py']
+           'prepare_data.py', 'score_probe.py', 'baselines.py', 'text_classifier.py']
 KEY = re.compile(rb'sk-[A-Za-z0-9_\-]{20,}|api_key\s*=\s*["\'][A-Za-z0-9]')
 
 
