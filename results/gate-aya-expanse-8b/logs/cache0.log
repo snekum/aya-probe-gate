@@ -1,0 +1,400 @@
+Loading weights:   0%|          | 0/258 [00:00<?, ?it/s]Loading weights:   8%|▊         | 20/258 [00:00<00:01, 199.01it/s]Loading weights:  32%|███▏      | 83/258 [00:00<00:00, 442.19it/s]Loading weights:  57%|█████▋    | 147/258 [00:00<00:00, 528.85it/s]Loading weights:  82%|████████▏ | 211/258 [00:00<00:00, 568.97it/s]Loading weights: 100%|██████████| 258/258 [00:00<00:00, 535.93it/s]
+run 15c2f535: 8818 rows, 45 shards, 8818 rows to do. layers=[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31] max_tokens=8192
+  shard 1: 25/200 rows
+  shard 1: 50/200 rows
+  shard 1: 75/200 rows
+  shard 1: 100/200 rows
+  shard 1: 125/200 rows
+  shard 1: 150/200 rows
+  shard 1: 175/200 rows
+  shard 1: 200/200 rows
+shard 1/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.25s/row, about 36 min left
+  shard 2: 25/200 rows
+  shard 2: 50/200 rows
+  shard 2: 75/200 rows
+  shard 2: 100/200 rows
+  shard 2: 125/200 rows
+  shard 2: 150/200 rows
+  shard 2: 175/200 rows
+  shard 2: 200/200 rows
+shard 2/45: 200/200 ok, 6 shortened (0 after running out of memory), 0.39s/row, about 54 min left
+  shard 3: 25/200 rows
+  shard 3: 50/200 rows
+  shard 3: 75/200 rows
+  shard 3: 100/200 rows
+  shard 3: 125/200 rows
+  shard 3: 150/200 rows
+  shard 3: 175/200 rows
+  shard 3: 200/200 rows
+shard 3/45: 200/200 ok, 28 shortened (0 after running out of memory), 0.49s/row, about 67 min left
+  shard 4: 25/200 rows
+  shard 4: 50/200 rows
+  shard 4: 75/200 rows
+  shard 4: 100/200 rows
+  shard 4: 125/200 rows
+  shard 4: 150/200 rows
+  shard 4: 175/200 rows
+  shard 4: 200/200 rows
+shard 4/45: 200/200 ok, 32 shortened (0 after running out of memory), 0.55s/row, about 74 min left
+  shard 5: 25/200 rows
+  shard 5: 50/200 rows
+  shard 5: 75/200 rows
+  shard 5: 100/200 rows
+  shard 5: 125/200 rows
+  shard 5: 150/200 rows
+  shard 5: 175/200 rows
+  shard 5: 200/200 rows
+shard 5/45: 200/200 ok, 30 shortened (0 after running out of memory), 0.59s/row, about 77 min left
+  shard 6: 25/200 rows
+  shard 6: 50/200 rows
+  shard 6: 75/200 rows
+  shard 6: 100/200 rows
+  shard 6: 125/200 rows
+  shard 6: 150/200 rows
+  shard 6: 175/200 rows
+  shard 6: 200/200 rows
+shard 6/45: 200/200 ok, 26 shortened (0 after running out of memory), 0.61s/row, about 77 min left
+  shard 7: 25/200 rows
+  shard 7: 50/200 rows
+  shard 7: 75/200 rows
+  shard 7: 100/200 rows
+  shard 7: 125/200 rows
+  shard 7: 150/200 rows
+  shard 7: 175/200 rows
+  shard 7: 200/200 rows
+shard 7/45: 200/200 ok, 2 shortened (0 after running out of memory), 0.56s/row, about 70 min left
+  shard 8: 25/200 rows
+  shard 8: 50/200 rows
+  shard 8: 75/200 rows
+  shard 8: 100/200 rows
+  shard 8: 125/200 rows
+  shard 8: 150/200 rows
+  shard 8: 175/200 rows
+  shard 8: 200/200 rows
+shard 8/45: 200/200 ok, 2 shortened (0 after running out of memory), 0.55s/row, about 66 min left
+  shard 9: 25/200 rows
+  shard 9: 50/200 rows
+  shard 9: 75/200 rows
+  shard 9: 100/200 rows
+  shard 9: 125/200 rows
+  shard 9: 150/200 rows
+  shard 9: 175/200 rows
+  shard 9: 200/200 rows
+shard 9/45: 200/200 ok, 30 shortened (0 after running out of memory), 0.57s/row, about 66 min left
+  shard 10: 25/200 rows
+  shard 10: 50/200 rows
+  shard 10: 75/200 rows
+  shard 10: 100/200 rows
+  shard 10: 125/200 rows
+  shard 10: 150/200 rows
+  shard 10: 175/200 rows
+  shard 10: 200/200 rows
+shard 10/45: 200/200 ok, 32 shortened (0 after running out of memory), 0.59s/row, about 67 min left
+  shard 11: 25/200 rows
+  shard 11: 50/200 rows
+  shard 11: 75/200 rows
+  shard 11: 100/200 rows
+  shard 11: 125/200 rows
+  shard 11: 150/200 rows
+  shard 11: 175/200 rows
+  shard 11: 200/200 rows
+shard 11/45: 200/200 ok, 27 shortened (0 after running out of memory), 0.59s/row, about 66 min left
+  shard 12: 25/200 rows
+  shard 12: 50/200 rows
+  shard 12: 75/200 rows
+  shard 12: 100/200 rows
+  shard 12: 125/200 rows
+  shard 12: 150/200 rows
+  shard 12: 175/200 rows
+  shard 12: 200/200 rows
+shard 12/45: 200/200 ok, 29 shortened (0 after running out of memory), 0.61s/row, about 65 min left
+  shard 13: 25/200 rows
+  shard 13: 50/200 rows
+  shard 13: 75/200 rows
+  shard 13: 100/200 rows
+  shard 13: 125/200 rows
+  shard 13: 150/200 rows
+  shard 13: 175/200 rows
+  shard 13: 200/200 rows
+shard 13/45: 200/200 ok, 4 shortened (0 after running out of memory), 0.59s/row, about 61 min left
+  shard 14: 25/200 rows
+  shard 14: 50/200 rows
+  shard 14: 75/200 rows
+  shard 14: 100/200 rows
+  shard 14: 125/200 rows
+  shard 14: 150/200 rows
+  shard 14: 175/200 rows
+  shard 14: 200/200 rows
+shard 14/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.57s/row, about 57 min left
+  shard 15: 25/200 rows
+  shard 15: 50/200 rows
+  shard 15: 75/200 rows
+  shard 15: 100/200 rows
+  shard 15: 125/200 rows
+  shard 15: 150/200 rows
+  shard 15: 175/200 rows
+  shard 15: 200/200 rows
+shard 15/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.55s/row, about 53 min left
+  shard 16: 25/200 rows
+  shard 16: 50/200 rows
+  shard 16: 75/200 rows
+  shard 16: 100/200 rows
+  shard 16: 125/200 rows
+  shard 16: 150/200 rows
+  shard 16: 175/200 rows
+  shard 16: 200/200 rows
+shard 16/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.53s/row, about 50 min left
+  shard 17: 25/200 rows
+  shard 17: 50/200 rows
+  shard 17: 75/200 rows
+  shard 17: 100/200 rows
+  shard 17: 125/200 rows
+  shard 17: 150/200 rows
+  shard 17: 175/200 rows
+  shard 17: 200/200 rows
+shard 17/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.51s/row, about 46 min left
+  shard 18: 25/200 rows
+  shard 18: 50/200 rows
+  shard 18: 75/200 rows
+  shard 18: 100/200 rows
+  shard 18: 125/200 rows
+  shard 18: 150/200 rows
+  shard 18: 175/200 rows
+  shard 18: 200/200 rows
+shard 18/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.49s/row, about 43 min left
+  shard 19: 25/200 rows
+  shard 19: 50/200 rows
+  shard 19: 75/200 rows
+  shard 19: 100/200 rows
+  shard 19: 125/200 rows
+  shard 19: 150/200 rows
+  shard 19: 175/200 rows
+  shard 19: 200/200 rows
+shard 19/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.48s/row, about 40 min left
+  shard 20: 25/200 rows
+  shard 20: 50/200 rows
+  shard 20: 75/200 rows
+  shard 20: 100/200 rows
+  shard 20: 125/200 rows
+  shard 20: 150/200 rows
+  shard 20: 175/200 rows
+  shard 20: 200/200 rows
+shard 20/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.46s/row, about 37 min left
+  shard 21: 25/200 rows
+  shard 21: 50/200 rows
+  shard 21: 75/200 rows
+  shard 21: 100/200 rows
+  shard 21: 125/200 rows
+  shard 21: 150/200 rows
+  shard 21: 175/200 rows
+  shard 21: 200/200 rows
+shard 21/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.45s/row, about 34 min left
+  shard 22: 25/200 rows
+  shard 22: 50/200 rows
+  shard 22: 75/200 rows
+  shard 22: 100/200 rows
+  shard 22: 125/200 rows
+  shard 22: 150/200 rows
+  shard 22: 175/200 rows
+  shard 22: 200/200 rows
+shard 22/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.43s/row, about 32 min left
+  shard 23: 25/200 rows
+  shard 23: 50/200 rows
+  shard 23: 75/200 rows
+  shard 23: 100/200 rows
+  shard 23: 125/200 rows
+  shard 23: 150/200 rows
+  shard 23: 175/200 rows
+  shard 23: 200/200 rows
+shard 23/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.42s/row, about 30 min left
+  shard 24: 25/200 rows
+  shard 24: 50/200 rows
+  shard 24: 75/200 rows
+  shard 24: 100/200 rows
+  shard 24: 125/200 rows
+  shard 24: 150/200 rows
+  shard 24: 175/200 rows
+  shard 24: 200/200 rows
+shard 24/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.41s/row, about 28 min left
+  shard 25: 25/200 rows
+  shard 25: 50/200 rows
+  shard 25: 75/200 rows
+  shard 25: 100/200 rows
+  shard 25: 125/200 rows
+  shard 25: 150/200 rows
+  shard 25: 175/200 rows
+  shard 25: 200/200 rows
+shard 25/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.40s/row, about 26 min left
+  shard 26: 25/200 rows
+  shard 26: 50/200 rows
+  shard 26: 75/200 rows
+  shard 26: 100/200 rows
+  shard 26: 125/200 rows
+  shard 26: 150/200 rows
+  shard 26: 175/200 rows
+  shard 26: 200/200 rows
+shard 26/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.39s/row, about 24 min left
+  shard 27: 25/200 rows
+  shard 27: 50/200 rows
+  shard 27: 75/200 rows
+  shard 27: 100/200 rows
+  shard 27: 125/200 rows
+  shard 27: 150/200 rows
+  shard 27: 175/200 rows
+  shard 27: 200/200 rows
+shard 27/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.38s/row, about 22 min left
+  shard 28: 25/200 rows
+  shard 28: 50/200 rows
+  shard 28: 75/200 rows
+  shard 28: 100/200 rows
+  shard 28: 125/200 rows
+  shard 28: 150/200 rows
+  shard 28: 175/200 rows
+  shard 28: 200/200 rows
+shard 28/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.37s/row, about 20 min left
+  shard 29: 25/200 rows
+  shard 29: 50/200 rows
+  shard 29: 75/200 rows
+  shard 29: 100/200 rows
+  shard 29: 125/200 rows
+  shard 29: 150/200 rows
+  shard 29: 175/200 rows
+  shard 29: 200/200 rows
+shard 29/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.36s/row, about 18 min left
+  shard 30: 25/200 rows
+  shard 30: 50/200 rows
+  shard 30: 75/200 rows
+  shard 30: 100/200 rows
+  shard 30: 125/200 rows
+  shard 30: 150/200 rows
+  shard 30: 175/200 rows
+  shard 30: 200/200 rows
+shard 30/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.36s/row, about 17 min left
+  shard 31: 25/200 rows
+  shard 31: 50/200 rows
+  shard 31: 75/200 rows
+  shard 31: 100/200 rows
+  shard 31: 125/200 rows
+  shard 31: 150/200 rows
+  shard 31: 175/200 rows
+  shard 31: 200/200 rows
+shard 31/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.35s/row, about 15 min left
+  shard 32: 25/200 rows
+  shard 32: 50/200 rows
+  shard 32: 75/200 rows
+  shard 32: 100/200 rows
+  shard 32: 125/200 rows
+  shard 32: 150/200 rows
+  shard 32: 175/200 rows
+  shard 32: 200/200 rows
+shard 32/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.34s/row, about 14 min left
+  shard 33: 25/200 rows
+  shard 33: 50/200 rows
+  shard 33: 75/200 rows
+  shard 33: 100/200 rows
+  shard 33: 125/200 rows
+  shard 33: 150/200 rows
+  shard 33: 175/200 rows
+  shard 33: 200/200 rows
+shard 33/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.34s/row, about 12 min left
+  shard 34: 25/200 rows
+  shard 34: 50/200 rows
+  shard 34: 75/200 rows
+  shard 34: 100/200 rows
+  shard 34: 125/200 rows
+  shard 34: 150/200 rows
+  shard 34: 175/200 rows
+  shard 34: 200/200 rows
+shard 34/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.33s/row, about 11 min left
+  shard 35: 25/200 rows
+  shard 35: 50/200 rows
+  shard 35: 75/200 rows
+  shard 35: 100/200 rows
+  shard 35: 125/200 rows
+  shard 35: 150/200 rows
+  shard 35: 175/200 rows
+  shard 35: 200/200 rows
+shard 35/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.33s/row, about 10 min left
+  shard 36: 25/200 rows
+  shard 36: 50/200 rows
+  shard 36: 75/200 rows
+  shard 36: 100/200 rows
+  shard 36: 125/200 rows
+  shard 36: 150/200 rows
+  shard 36: 175/200 rows
+  shard 36: 200/200 rows
+shard 36/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.32s/row, about 9 min left
+  shard 37: 25/200 rows
+  shard 37: 50/200 rows
+  shard 37: 75/200 rows
+  shard 37: 100/200 rows
+  shard 37: 125/200 rows
+  shard 37: 150/200 rows
+  shard 37: 175/200 rows
+  shard 37: 200/200 rows
+shard 37/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.32s/row, about 8 min left
+  shard 38: 25/200 rows
+  shard 38: 50/200 rows
+  shard 38: 75/200 rows
+  shard 38: 100/200 rows
+  shard 38: 125/200 rows
+  shard 38: 150/200 rows
+  shard 38: 175/200 rows
+  shard 38: 200/200 rows
+shard 38/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.31s/row, about 6 min left
+  shard 39: 25/200 rows
+  shard 39: 50/200 rows
+  shard 39: 75/200 rows
+  shard 39: 100/200 rows
+  shard 39: 125/200 rows
+  shard 39: 150/200 rows
+  shard 39: 175/200 rows
+  shard 39: 200/200 rows
+shard 39/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.31s/row, about 5 min left
+  shard 40: 25/200 rows
+  shard 40: 50/200 rows
+  shard 40: 75/200 rows
+  shard 40: 100/200 rows
+  shard 40: 125/200 rows
+  shard 40: 150/200 rows
+  shard 40: 175/200 rows
+  shard 40: 200/200 rows
+shard 40/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.31s/row, about 4 min left
+  shard 41: 25/200 rows
+  shard 41: 50/200 rows
+  shard 41: 75/200 rows
+  shard 41: 100/200 rows
+  shard 41: 125/200 rows
+  shard 41: 150/200 rows
+  shard 41: 175/200 rows
+  shard 41: 200/200 rows
+shard 41/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.30s/row, about 3 min left
+  shard 42: 25/200 rows
+  shard 42: 50/200 rows
+  shard 42: 75/200 rows
+  shard 42: 100/200 rows
+  shard 42: 125/200 rows
+  shard 42: 150/200 rows
+  shard 42: 175/200 rows
+  shard 42: 200/200 rows
+shard 42/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.30s/row, about 2 min left
+  shard 43: 25/200 rows
+  shard 43: 50/200 rows
+  shard 43: 75/200 rows
+  shard 43: 100/200 rows
+  shard 43: 125/200 rows
+  shard 43: 150/200 rows
+  shard 43: 175/200 rows
+  shard 43: 200/200 rows
+shard 43/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 1 min left
+  shard 44: 25/200 rows
+  shard 44: 50/200 rows
+  shard 44: 75/200 rows
+  shard 44: 100/200 rows
+  shard 44: 125/200 rows
+  shard 44: 150/200 rows
+  shard 44: 175/200 rows
+  shard 44: 200/200 rows
+shard 44/45: 200/200 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 0 min left
+shard 45/45: 18/18 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 0 min left
+done
