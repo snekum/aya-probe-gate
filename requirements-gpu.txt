@@ -1,0 +1,14 @@
+# GPU machine (scripts/run_model.py). Python 3.12+ (SafeTune needs it).
+# Install torch first, built for your CUDA version (https://pytorch.org/get-started/locally/), then:
+#   pip install -r requirements-gpu.txt
+#   pip uninstall -y torchao      # SafeTune's README: torchao breaks its import
+# Same pins as the Kaggle notebooks. transformers 5.15-5.21 is the range SafeTune and AuditKIT both accept.
+transformers>=5.15,<5.22
+accelerate
+datasets
+scikit-learn
+numpy
+scipy
+matplotlib
+safetune @ git+https://github.com/Lexsi-Labs/SafeTune@1d824f026742fe2ce58491a8414f51a264931840
+auditkit @ git+https://github.com/Lexsi-Labs/AuditKIT@9da5838e61ef54d560a37605ddbcb19aceded9b3

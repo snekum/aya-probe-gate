@@ -13,5 +13,6 @@ kaggle/tsbench-probe-bundle.zip
 # Kaggle download zips: the same files are unpacked in results/
 results/*.zip
 
-# Cached activations live on Kaggle (several GB)
+# Cached activations live on Kaggle (several GB), or in work/ for scripts/run_model.py
 acts/
+work/
