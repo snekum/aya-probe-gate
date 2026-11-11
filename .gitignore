@@ -13,6 +13,9 @@ kaggle/tsbench-probe-bundle.zip
 # Kaggle download zips: the same files are unpacked in results/
 results/*.zip
 
+# Task-recovery pilot: saved model calls, only useful for resuming a run (episodes.jsonl has the transcripts)
+results/*/memo.jsonl
+
 # Cached activations live on Kaggle (several GB), or in work/ for scripts/run_model.py
 acts/
 work/

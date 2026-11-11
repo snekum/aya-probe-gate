@@ -11,7 +11,13 @@ import argparse, glob, os, re, zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS = ['probe_format.py', 'build_cache_inputs.py', 'cache_activations.py', 'train_probe.py',
            'gate.py', 'eval_gate.py', 'audit_gate.py', 'redirect_vector.py', 'threshold_curve.py',
-           'prepare_data.py', 'score_probe.py', 'baselines.py', 'text_classifier.py']
+           'prepare_data.py', 'score_probe.py', 'baselines.py', 'text_classifier.py',
+           'recovery_env.py', 'recovery_tasks.py', 'recovery_run.py', 'recovery_report.py', 'recovery_selftest.py']
+# The task-recovery pilot reads the final Tiny Aya probe and steer-back vector from the repo, so its
+# notebook needs no other notebook's output.
+RECOVERY = ['results/followup-tiny-aya-global/gate-tiny-aya-global/probe/probe_best.npz',
+            'results/followup-tiny-aya-global/calib-tiny-aya-global/redirect.json',
+            'results/followup-tiny-aya-global/calib-tiny-aya-global/redirect_vectors.pt']
 KEY = re.compile(rb'sk-[A-Za-z0-9_\-]{20,}|api_key\s*=\s*["\'][A-Za-z0-9]')
 
 
@@ -21,7 +27,7 @@ def main():
     a = ap.parse_args()
     files = [f'scripts/{s}' for s in SCRIPTS]
     files += [os.path.relpath(p, ROOT).replace('\\', '/') for p in glob.glob(os.path.join(ROOT, 'data', '*'))]
-    files += ['results/baselines_seed_spread.json', 'vendor/TOOLSAFE_COMMIT.txt']
+    files += ['results/baselines_seed_spread.json', 'vendor/TOOLSAFE_COMMIT.txt'] + RECOVERY
     files += [os.path.relpath(p, ROOT).replace('\\', '/')
               for p in glob.glob(os.path.join(ROOT, 'vendor', 'ToolSafe', 'TS-Bench', '**', '*'), recursive=True)
               if os.path.isfile(p)]
