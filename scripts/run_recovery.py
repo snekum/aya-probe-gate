@@ -35,6 +35,7 @@ def run(cmd, logfile):
                              encoding='utf-8', errors='replace')
         for line in p.stdout:
             sys.stdout.write(line)
+            sys.stdout.flush()   # Kaggle and nohup logs are not a terminal: without this, lines arrive in 8 KB batches
             out.write(line)
         p.wait()
     if p.returncode != 0:
