@@ -57,7 +57,7 @@ class Scripted:
     def steered(self, c):
         return self._next(c, 'oracle' if self.second == 'oracle' else self.behaviour)
 
-    def retry(self, c, flagged):
+    def retry(self, c, flagged, steer=False):
         return self.steered(c)
 
 
