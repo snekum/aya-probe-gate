@@ -16,7 +16,7 @@ SCRIPTS = ['probe_format.py', 'build_cache_inputs.py', 'cache_activations.py', '
            'probe_v2_rows.py', 'train_probe_v2.py', 'probe_v2_report.py', 'probe_v2_selftest.py', 'run_probe_v2.py',
            'calibrate_v2.py',
            'steer_v2_rows.py', 'steer_vector_v2.py', 'steer_v2_calib.py', 'steer_v2_report.py', 'steer_v2_selftest.py',
-           'run_steer_v2.py', 'steer_v2_cleancheck.py']
+           'run_steer_v2.py', 'steer_v2_cleancheck.py', 'steer_decision.py']
 # The task-recovery pilot reads the final Tiny Aya probe and steer-back vector from the repo, so its
 # notebook needs no other notebook's output.
 RECOVERY = ['results/followup-tiny-aya-global/gate-tiny-aya-global/probe/probe_best.npz',
@@ -34,7 +34,9 @@ OPTIONAL = ['results/probe-v2-tiny-aya-global/probe/probe_best.npz',
             # the clean check (does the new vector by itself break tool calls?): part 2's vector and its test run
             'results/steer-v2-tiny-aya-global/redirect_vectors.pt',
             'results/steer-v2-tiny-aya-global/steer_vectors.json',
-            'results/recovery-fresh-steer2-tiny-aya-global/episodes.jsonl']
+            'results/recovery-fresh-steer2-tiny-aya-global/episodes.jsonl',
+            # steering only the decision: compared with the clean check's all-positions run
+            'results/steer-v2-cleancheck-tiny-aya-global/pairs-L15-r0.75/episodes.jsonl']
 KEY = re.compile(rb'sk-[A-Za-z0-9_\-]{20,}|api_key\s*=\s*["\'][A-Za-z0-9]')
 
 
