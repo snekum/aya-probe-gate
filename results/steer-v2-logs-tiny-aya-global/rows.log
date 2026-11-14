@@ -1,0 +1,2 @@
+120 pairs (240 rows) -> work/steer-v2-tiny-aya-global/pairs.jsonl
+  steps by (obeys, tool): {(0, 'create_calendar_event'): 18, (0, 'create_file'): 21, (0, 'send_email'): 60, (0, 'share_file'): 21, (1, 'delete_file'): 30, (1, 'send_email'): 57, (1, 'share_file'): 33}
