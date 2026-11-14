@@ -12,12 +12,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS = ['probe_format.py', 'build_cache_inputs.py', 'cache_activations.py', 'train_probe.py',
            'gate.py', 'eval_gate.py', 'audit_gate.py', 'redirect_vector.py', 'threshold_curve.py',
            'prepare_data.py', 'score_probe.py', 'baselines.py', 'text_classifier.py',
-           'recovery_env.py', 'recovery_tasks.py', 'recovery_run.py', 'recovery_report.py', 'recovery_selftest.py']
+           'recovery_env.py', 'recovery_tasks.py', 'recovery_run.py', 'recovery_report.py', 'recovery_selftest.py',
+           'probe_v2_rows.py', 'train_probe_v2.py', 'probe_v2_report.py', 'probe_v2_selftest.py', 'run_probe_v2.py',
+           'calibrate_v2.py']
 # The task-recovery pilot reads the final Tiny Aya probe and steer-back vector from the repo, so its
 # notebook needs no other notebook's output.
 RECOVERY = ['results/followup-tiny-aya-global/gate-tiny-aya-global/probe/probe_best.npz',
             'results/followup-tiny-aya-global/calib-tiny-aya-global/redirect.json',
-            'results/followup-tiny-aya-global/calib-tiny-aya-global/redirect_vectors.pt']
+            'results/followup-tiny-aya-global/calib-tiny-aya-global/redirect_vectors.pt',
+            # probe v2: Tiny Aya's one-step drafts (scored again on the fresh activations)
+            'results/followup-tiny-aya-global/gate-tiny-aya-global/agent_outputs.jsonl',
+            # probe v2's calibration rows: Tiny Aya's simple-pool episodes
+            'results/recovery-simple-tiny-aya-global/episodes.jsonl']
 KEY = re.compile(rb'sk-[A-Za-z0-9_\-]{20,}|api_key\s*=\s*["\'][A-Za-z0-9]')
 
 

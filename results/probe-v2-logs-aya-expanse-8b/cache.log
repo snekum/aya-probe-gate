@@ -1,0 +1,116 @@
+
+Loading weights:   0%|          | 0/258 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/258 [00:00<00:32,  8.02it/s]
+Loading weights:  34%|███▍      | 88/258 [00:00<00:00, 461.37it/s]
+Loading weights:  57%|█████▋    | 148/258 [00:00<00:00, 511.72it/s]
+Loading weights:  82%|████████▏ | 211/258 [00:00<00:00, 540.80it/s]
+Loading weights: 100%|██████████| 258/258 [00:00<00:00, 508.11it/s]
+run 062cd664: 1752 rows, 18 shards, 1752 rows to do. layers=[15] max_tokens=8192
+  shard 1: 25/100 rows
+  shard 1: 50/100 rows
+  shard 1: 75/100 rows
+  shard 1: 100/100 rows
+shard 1/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 8 min left
+  shard 2: 25/100 rows
+  shard 2: 50/100 rows
+  shard 2: 75/100 rows
+  shard 2: 100/100 rows
+shard 2/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 8 min left
+  shard 3: 25/100 rows
+  shard 3: 50/100 rows
+  shard 3: 75/100 rows
+  shard 3: 100/100 rows
+shard 3/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.28s/row, about 7 min left
+  shard 4: 25/100 rows
+  shard 4: 50/100 rows
+  shard 4: 75/100 rows
+  shard 4: 100/100 rows
+shard 4/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.29s/row, about 7 min left
+  shard 5: 25/100 rows
+  shard 5: 50/100 rows
+  shard 5: 75/100 rows
+  shard 5: 100/100 rows
+shard 5/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.35s/row, about 7 min left
+  shard 6: 25/100 rows
+  shard 6: 50/100 rows
+  shard 6: 75/100 rows
+  shard 6: 100/100 rows
+shard 6/18: 100/100 ok, 19 shortened (0 after running out of memory), 0.43s/row, about 8 min left
+  shard 7: 25/100 rows
+  shard 7: 50/100 rows
+  shard 7: 75/100 rows
+  shard 7: 100/100 rows
+shard 7/18: 100/100 ok, 11 shortened (0 after running out of memory), 0.48s/row, about 8 min left
+  shard 8: 25/100 rows
+  shard 8: 50/100 rows
+  shard 8: 75/100 rows
+  shard 8: 100/100 rows
+shard 8/18: 100/100 ok, 22 shortened (0 after running out of memory), 0.54s/row, about 9 min left
+  shard 9: 25/100 rows
+  shard 9: 50/100 rows
+  shard 9: 75/100 rows
+  shard 9: 100/100 rows
+shard 9/18: 100/100 ok, 15 shortened (0 after running out of memory), 0.56s/row, about 8 min left
+  shard 10: 25/100 rows
+  shard 10: 50/100 rows
+  shard 10: 75/100 rows
+  shard 10: 100/100 rows
+shard 10/18: 100/100 ok, 17 shortened (0 after running out of memory), 0.60s/row, about 8 min left
+  shard 11: 25/100 rows
+  shard 11: 50/100 rows
+  shard 11: 75/100 rows
+  shard 11: 100/100 rows
+shard 11/18: 100/100 ok, 11 shortened (0 after running out of memory), 0.62s/row, about 7 min left
+  shard 12: 25/100 rows
+  shard 12: 50/100 rows
+  shard 12: 75/100 rows
+  shard 12: 100/100 rows
+shard 12/18: 100/100 ok, 11 shortened (0 after running out of memory), 0.63s/row, about 6 min left
+  shard 13: 25/100 rows
+  shard 13: 50/100 rows
+  shard 13: 75/100 rows
+  shard 13: 100/100 rows
+shard 13/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.60s/row, about 5 min left
+  shard 14: 25/100 rows
+  shard 14: 50/100 rows
+  shard 14: 75/100 rows
+  shard 14: 100/100 rows
+shard 14/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.58s/row, about 3 min left
+  shard 15: 25/100 rows
+  shard 15: 50/100 rows
+  shard 15: 75/100 rows
+  shard 15: 100/100 rows
+shard 15/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.56s/row, about 2 min left
+  shard 16: 25/100 rows
+  shard 16: 50/100 rows
+  shard 16: 75/100 rows
+  shard 16: 100/100 rows
+shard 16/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.55s/row, about 1 min left
+  shard 17: 25/100 rows
+  shard 17: 50/100 rows
+  shard 17: 75/100 rows
+  shard 17: 100/100 rows
+shard 17/18: 100/100 ok, 0 shortened (0 after running out of memory), 0.56s/row, about 0 min left
+  shard 18: 25/52 rows
+  shard 18: 50/52 rows
+shard 18/18: 52/52 ok, 0 shortened (0 after running out of memory), 0.57s/row, about 0 min left
+done
+
+Loading weights:   0%|          | 0/258 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/258 [00:00<00:31,  8.20it/s]
+Loading weights:  31%|███       | 79/258 [00:00<00:00, 420.09it/s]
+Loading weights:  53%|█████▎    | 136/258 [00:00<00:00, 484.65it/s]
+Loading weights:  76%|███████▌  | 195/258 [00:00<00:00, 518.41it/s]
+Loading weights:  97%|█████████▋| 251/258 [00:00<00:00, 525.24it/s]
+Loading weights: 100%|██████████| 258/258 [00:00<00:00, 481.69it/s]
+run 2332c56b: 181 rows, 2 shards, 181 rows to do. layers=[15] max_tokens=8192
+  shard 1: 25/100 rows
+  shard 1: 50/100 rows
+  shard 1: 75/100 rows
+  shard 1: 100/100 rows
+shard 1/2: 100/100 ok, 0 shortened (0 after running out of memory), 0.28s/row, about 0 min left
+  shard 2: 25/81 rows
+  shard 2: 50/81 rows
+  shard 2: 75/81 rows
+shard 2/2: 81/81 ok, 0 shortened (0 after running out of memory), 0.28s/row, about 0 min left
+done

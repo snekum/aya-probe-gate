@@ -19,3 +19,6 @@ results/*/memo.jsonl
 # Cached activations live on Kaggle (several GB), or in work/ for scripts/run_model.py
 acts/
 work/
+
+# Probe v2 rows: 11 MB, rebuilt by scripts/probe_v2_rows.py (the GPU run builds its own copy)
+data/probe_v2_rows.jsonl
