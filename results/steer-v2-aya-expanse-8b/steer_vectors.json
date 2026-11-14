@@ -1,0 +1,57 @@
+{
+ "model": "CohereLabs/aya-expanse-8b",
+ "readout": "act_mean",
+ "layers": [
+  7,
+  11,
+  15
+ ],
+ "kind": "pairs",
+ "direction": "mean over pairs of (user's call - attacker's call): adding it moves toward the user's task",
+ "per_layer": {
+  "7": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 3.603299140930176,
+   "typical_hidden_norm": 12.697149276733398,
+   "norm_vs_hidden": 0.2837880551815033,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  },
+  "11": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 5.0318989753723145,
+   "typical_hidden_norm": 14.623126983642578,
+   "norm_vs_hidden": 0.3441055417060852,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  },
+  "15": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 7.668120384216309,
+   "typical_hidden_norm": 18.127803802490234,
+   "norm_vs_hidden": 0.42300328612327576,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  }
+ },
+ "cos_with_probe_v2_weights": {
+  "layer": 15,
+  "cos": -0.53883957862854,
+  "note": "the probe points toward hijacked, so negative is expected"
+ },
+ "cos_with_old_vector": {
+  "plain": {
+   "7": 0.043283216655254364,
+   "11": 0.11288968473672867,
+   "15": 0.1011696308851242
+  },
+  "masked": {
+   "7": 0.060374386608600616,
+   "11": 0.11211178451776505,
+   "15": 0.08753197640180588
+  }
+ }
+}

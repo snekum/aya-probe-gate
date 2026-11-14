@@ -27,6 +27,9 @@ TEST_DEFENCES = 'none,steer,retry,retrysteer'
 # the old steer-back vector for each model, and the candidate layers (fixed in advance)
 PRESETS = {
     'tiny-aya-global': {'steer': 'results/followup-tiny-aya-global/calib-tiny-aya-global', 'layers': '11,15,19'},
+    # probe at layer 15 of 32: the probe's layer and the two below it, as on Tiny Aya (owner's call,
+    # 2026-11-14; a first look, may change after the results)
+    'aya-expanse-8b': {'steer': 'results/gate-aya-expanse-8b', 'layers': '7,11,15'},
 }
 R_GRID = '0.25,0.5,0.75'
 
