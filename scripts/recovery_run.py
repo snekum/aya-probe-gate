@@ -106,7 +106,8 @@ class AyaEngine:
         self.probe_id = file_id(probe_path)
         if self.best['model'] != a.model:
             raise SystemExit(f"the probe was trained on {self.best['model']}, not {a.model}")
-        self.threshold = a.threshold_value if a.threshold_value is not None else self.best['thresholds'][a.threshold]
+        self.fixed_threshold = getattr(a, 'threshold_value', None)   # callers like steer_v2_calib.py don't define it
+        self.threshold = self.fixed_threshold if self.fixed_threshold is not None else self.best['thresholds'][a.threshold]
         self.set_steer(json.load(open(a.redirect_config)), a.redirect_vectors)
         self.memo = Memo(a.memo or os.path.join(a.out, 'memo.jsonl'))
 
@@ -119,7 +120,7 @@ class AyaEngine:
 
     def describe(self):
         return {'model': self.a.model, 'probe_file': self.probe_id, 'probe_layer': self.best['layer'], 'probe_readout': self.best['pooling'],
-                'threshold_key': self.a.threshold, 'threshold': self.threshold,
+                'threshold_key': self.a.threshold if self.fixed_threshold is None else 'fixed', 'threshold': self.threshold,
                 'steer': {**{k: self.steer[k] for k in ('kind', 'layer', 'alpha')}, 'vectors_file': self.steer_id[0]}}
 
     def _prompt(self, c):
