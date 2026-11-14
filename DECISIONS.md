@@ -1680,6 +1680,10 @@ Points that came up:
 
 ### Before going public (licence check, 2026-11-09)
 
+**Done 2026-11-14:** `LICENSE` (MIT) and `NOTICE` added, credits sections in README and WRITEUP,
+AgentHarm canary next to the data. The Lexsi acknowledgement isn't needed: the tools were used for
+Lexsi's own public hackathon. AgentAlign isn't in `data/`, so it isn't credited there.
+
 From the licence texts, read 2026-11-09. This is not legal advice. None of it applies to the private
 repo shared with the teammate.
 
