@@ -28,8 +28,10 @@ TEST_DEFENCES = 'none,steer,retry,retrysteer'
 # the old steer-back vector for each model, and the candidate layers (fixed in advance)
 PRESETS = {
     'tiny-aya-global': {'steer': 'results/followup-tiny-aya-global/calib-tiny-aya-global', 'layers': '11,15,19'},
-    # probe and old vector at 15 of 32; centred on it, since Tiny's layer 8 before its probe did nothing (DECISIONS.md)
-    'aya-expanse-8b': {'steer': 'results/gate-aya-expanse-8b', 'layers': '11,15,19'},
+    # Expanse: probe and old vector at layer 15 of 32. The plan logged before the run said 11,15,19;
+    # the run used 7,11,15 (the probe's layer and the two below it, as on Tiny Aya). Kept as run so the
+    # results reproduce; see DECISIONS.md 2026-11-14 'Part 2 on Aya Expanse 8B'.
+    'aya-expanse-8b': {'steer': 'results/gate-aya-expanse-8b', 'layers': '7,11,15'},
 }
 R_GRID = '0.25,0.5,0.75'
 

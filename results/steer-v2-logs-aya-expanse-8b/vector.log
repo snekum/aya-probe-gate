@@ -1,0 +1,5 @@
+layer 7: 120 pairs, size 0.28 of the hidden state, held-out families pointing the right way 100%
+layer 11: 120 pairs, size 0.34 of the hidden state, held-out families pointing the right way 100%
+layer 15: 120 pairs, size 0.42 of the hidden state, held-out families pointing the right way 100%
+cos_with_probe_v2_weights {"layer": 15, "cos": -0.53883957862854, "note": "the probe points toward hijacked, so negative is expected"}
+cos_with_old_vector {"plain": {"7": 0.043283216655254364, "11": 0.11288968473672867, "15": 0.1011696308851242}, "masked": {"7": 0.060374386608600616, "11": 0.11211178451776505, "15": 0.08753197640180588}}
