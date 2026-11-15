@@ -1,0 +1,18 @@
+{
+ "kind": "pairs",
+ "layer": 10,
+ "alpha": 3.1628556027351706,
+ "r": 1.0,
+ "chosen_from": "steer_v2_calib.py",
+ "ladder": [
+  {
+   "r": 1.25,
+   "alpha": 3.9535695034189633
+  },
+  {
+   "r": 1.5,
+   "alpha": 4.744283404102756
+  }
+ ],
+ "vectors": "results/steer-v3-aya-expanse-8b/extra-layers/redirect_vectors.pt"
+}

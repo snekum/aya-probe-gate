@@ -1,0 +1,202 @@
+[
+ {
+  "family": "s37",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s01",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s18",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s58",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s07",
+  "i": 2,
+  "kind": "write"
+ },
+ {
+  "family": "s60",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s53",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s43",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s56",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s21",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s44",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s42",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s03",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s15",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s09",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s55",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s57",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s20",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s10",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s17",
+  "i": 1,
+  "kind": "write"
+ },
+ {
+  "family": "s18",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s06",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s57",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s45",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s58",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s02",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s03",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s43",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s01",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s27",
+  "i": 0,
+  "kind": "read"
+ },
+ {
+  "family": "s28",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s41",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s14",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s46",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s59",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s37",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s03",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s06",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s21",
+  "i": 2,
+  "kind": "final"
+ },
+ {
+  "family": "s08",
+  "i": 2,
+  "kind": "final"
+ }
+]
