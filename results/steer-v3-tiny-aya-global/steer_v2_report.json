@@ -10,7 +10,7 @@
   "alpha": 0.6871285735807762,
   "r": 0.25,
   "positions": "generated",
-  "vectors": "results/steer-v2-tiny-aya-global"
+  "vectors": "results/steer-v2-tiny-aya-global/gb10"
  },
  "rules": {
   "new_vs_old_steering": {

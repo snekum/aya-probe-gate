@@ -1,0 +1,7 @@
+{
+ "kind": "pairs",
+ "layer": 15,
+ "alpha": 2.0614591815439547,
+ "r": 0.75,
+ "chosen_from": "steer_v2_calib.py"
+}

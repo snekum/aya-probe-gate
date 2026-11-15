@@ -12,46 +12,46 @@
   "11": {
    "n_pairs": 120,
    "missing_pairs": 0,
-   "norm": 4.373346328735352,
-   "typical_hidden_norm": 15.834627151489258,
-   "norm_vs_hidden": 0.27618879079818726,
+   "norm": 4.373290061950684,
+   "typical_hidden_norm": 15.83495044708252,
+   "norm_vs_hidden": 0.27617958188056946,
    "leave_one_family_out_points_right": 1.0,
    "pairs_agreeing_with_mean": 1.0
   },
   "15": {
    "n_pairs": 120,
    "missing_pairs": 0,
-   "norm": 6.1213178634643555,
-   "typical_hidden_norm": 16.82452964782715,
-   "norm_vs_hidden": 0.36383292078971863,
+   "norm": 6.1211934089660645,
+   "typical_hidden_norm": 16.824787139892578,
+   "norm_vs_hidden": 0.36381995677948,
    "leave_one_family_out_points_right": 1.0,
    "pairs_agreeing_with_mean": 1.0
   },
   "19": {
    "n_pairs": 120,
    "missing_pairs": 0,
-   "norm": 7.585282325744629,
-   "typical_hidden_norm": 20.870372772216797,
-   "norm_vs_hidden": 0.363447368144989,
+   "norm": 7.585144996643066,
+   "typical_hidden_norm": 20.870038986206055,
+   "norm_vs_hidden": 0.3634466230869293,
    "leave_one_family_out_points_right": 1.0,
    "pairs_agreeing_with_mean": 1.0
   }
  },
  "cos_with_probe_v2_weights": {
   "layer": 19,
-  "cos": -0.5296065807342529,
+  "cos": -0.5296011567115784,
   "note": "the probe points toward hijacked, so negative is expected"
  },
  "cos_with_old_vector": {
   "plain": {
-   "11": 0.12937436997890472,
-   "15": 0.06007261574268341,
-   "19": 0.11763763427734375
+   "11": 0.12936413288116455,
+   "15": 0.0601126104593277,
+   "19": 0.11761923134326935
   },
   "masked": {
-   "11": 0.13974936306476593,
-   "15": 0.05806422233581543,
-   "19": 0.10705304145812988
+   "11": 0.13973881304264069,
+   "15": 0.05810583755373955,
+   "19": 0.10703164339065552
   }
  }
 }

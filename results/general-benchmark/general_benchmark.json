@@ -1,0 +1,24 @@
+{
+ "tiny-aya-global": {
+  "n": 570,
+  "correct": 172,
+  "fired": 2,
+  "fired_on_correct": 0,
+  "correct_gate_on": 172,
+  "answered": 383,
+  "called_a_tool": 67,
+  "max_score": 0.14237751066684723,
+  "threshold": 0.052904394727569484
+ },
+ "aya-expanse-8b": {
+  "n": 570,
+  "correct": 5,
+  "fired": 96,
+  "fired_on_correct": 0,
+  "correct_gate_on": 5,
+  "answered": 5,
+  "called_a_tool": 564,
+  "max_score": 0.9469861388206482,
+  "threshold": 0.03443656116724014
+ }
+}

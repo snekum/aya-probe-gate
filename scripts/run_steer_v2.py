@@ -18,6 +18,7 @@ run). A FAIL is a result, not an error: don't rerun to change it (decoding is gr
 
 Usage, from the repo root (Linux):
   python scripts/run_steer_v2.py --model CohereLabs/tiny-aya-global --name tiny-aya-global --dtype float16
+  python scripts/run_steer_v2.py --model CohereLabs/aya-expanse-8b --name aya-expanse-8b   (after run_probe_v2.py)
 """
 import argparse, json, os, shutil, subprocess, sys, time
 
@@ -29,8 +30,9 @@ PRESETS = {
     # round 2's 11, 15, 19 so the grid covers 11 to 21 in steps of 2 (Expanse's 9 to 13 don't apply)
     'tiny-aya-global': {'steer': 'results/followup-tiny-aya-global/calib-tiny-aya-global', 'layers': '11,15,19',
                         'v3': {'extra_layers': '13,17,21'}},
-    # probe at layer 15 of 32: the probe's layer and the two below it, as on Tiny Aya (owner's call,
-    # 2026-11-14; a first look, may change after the results)
+    # Expanse: probe and old vector at layer 15 of 32. The plan logged before the run said 11,15,19;
+    # the run used 7,11,15 (the probe's layer and the two below it, as on Tiny Aya). Kept as run so the
+    # results reproduce; see DECISIONS.md 2026-11-14 'Part 2 on Aya Expanse 8B'.
     'aya-expanse-8b': {'steer': 'results/gate-aya-expanse-8b', 'layers': '7,11,15'},
 }
 # Rounds. v2: the first run of part 2. v3 (DECISIONS.md, 2026-11-14, "Round 3"): a wider strength grid,

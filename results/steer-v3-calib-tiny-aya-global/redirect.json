@@ -27,5 +27,5 @@
    "alpha": 4.122771441484657
   }
  ],
- "vectors": "results/steer-v2-tiny-aya-global/redirect_vectors.pt"
+ "vectors": "results/steer-v2-tiny-aya-global/gb10/redirect_vectors.pt"
 }

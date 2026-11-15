@@ -6,7 +6,7 @@
   "alpha": 0.6871285735807762,
   "r": 0.25,
   "positions": "generated",
-  "vectors": "results/steer-v2-tiny-aya-global"
+  "vectors": "results/steer-v2-tiny-aya-global/gb10"
  },
  "beats_old_on_calibration": false,
  "summaries": {
@@ -112,7 +112,7 @@
     "alpha": 0.6871285735807762,
     "r": 0.25,
     "positions": "generated",
-    "vectors": "results/steer-v2-tiny-aya-global"
+    "vectors": "results/steer-v2-tiny-aya-global/gb10"
    },
    "cost": {
     "setting": "pairs-L15-r0.25-gen",
