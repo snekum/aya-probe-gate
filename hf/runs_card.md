@@ -19,8 +19,8 @@ the GitHub repo without the probe weights and steering vectors, which are in the
 ([Tiny Aya Global](https://huggingface.co/{USER}/aya-probe-gate-tiny-aya-global),
 [Aya Expanse 8B](https://huggingface.co/{USER}/aya-probe-gate-aya-expanse-8b)).
 
-Everything after the GPU steps reruns on a CPU from these files; `README.md` in the GitHub repo
-has the commands, and `WRITEUP.md` says what was found.
+Everything after the GPU steps reruns on a CPU from these files; `REPRODUCE.md` in the GitHub repo
+has the commands, and `README.md` says what was found.
 
 ## What's here
 

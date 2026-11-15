@@ -46,4 +46,4 @@ The repo mixes our own work with data and models from others. Each part keeps it
      with pip at the commits pinned in requirements.txt and requirements-gpu.txt, under the Lexsi
      Source Available licence.
    - ToolSafe's repository itself is not included (vendor/ToolSafe is fetched separately; see
-     README.md, "Set up from a fresh clone").
+     REPRODUCE.md, "Set up from a fresh clone").

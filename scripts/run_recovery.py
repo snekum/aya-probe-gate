@@ -11,7 +11,7 @@ One command, in the order fixed in DECISIONS.md (2026-11-11 entries):
 Every step picks up where it left off if you run the command again. A small qualifying count or
 a STOP is a result, not a failure: don't rerun to change it (decoding is greedy, so it can't).
 
-Usage (Linux, from the repo root, after the set-up in README.md):
+Usage (Linux, from the repo root, after the set-up in REPRODUCE.md):
   export HF_TOKEN=...
   python scripts/run_recovery.py --model CohereLabs/aya-expanse-8b --name aya-expanse-8b
   python scripts/run_recovery.py ... --steps simple,zip      # only some steps

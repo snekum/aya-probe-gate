@@ -17,7 +17,7 @@ in order (each picks up where it left off if you run the command again):
 
 A FAIL in a rule is a result, not an error: don't rerun to change it (decoding is greedy).
 
-Usage, from the repo root (Linux, after the set-up in README.md):
+Usage, from the repo root (Linux, after the set-up in REPRODUCE.md):
   export HF_TOKEN=...
   python scripts/run_probe_v2.py --model CohereLabs/aya-expanse-8b --name aya-expanse-8b
   python scripts/run_probe_v2.py --model CohereLabs/tiny-aya-global --name tiny-aya-global --dtype float16
