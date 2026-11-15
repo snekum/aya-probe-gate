@@ -25,7 +25,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STEPS = ['selftest', 'rows', 'cache', 'vector', 'calib', 'test', 'report', 'zip']
 # the old steer-back vector for each model, and the candidate layers (fixed in advance)
 PRESETS = {
-    'tiny-aya-global': {'steer': 'results/followup-tiny-aya-global/calib-tiny-aya-global', 'layers': '11,15,19'},
+    # round 3 on Tiny Aya (DECISIONS.md, 2026-11-15): 36 layers, probe at 19; 13, 17, 21 fill in around
+    # round 2's 11, 15, 19 so the grid covers 11 to 21 in steps of 2 (Expanse's 9 to 13 don't apply)
+    'tiny-aya-global': {'steer': 'results/followup-tiny-aya-global/calib-tiny-aya-global', 'layers': '11,15,19',
+                        'v3': {'extra_layers': '13,17,21'}},
     # probe at layer 15 of 32: the probe's layer and the two below it, as on Tiny Aya (owner's call,
     # 2026-11-14; a first look, may change after the results)
     'aya-expanse-8b': {'steer': 'results/gate-aya-expanse-8b', 'layers': '7,11,15'},
@@ -77,7 +80,7 @@ def main():
     steps = a.steps.split(',')
     assert not [s for s in steps if s not in STEPS], f'choose steps from {STEPS}'
     pre = PRESETS[a.name]
-    rnd = dict(ROUNDS[a.round])
+    rnd = dict(ROUNDS[a.round], **pre.get(a.round, {}))   # the model's own settings for this round, if any
     rnd['r'] = a.r or rnd['r']
     rnd['extra_layers'] = rnd['extra_layers'] if a.extra_layers is None else a.extra_layers
     rnd['positions'] = a.positions or rnd['positions']

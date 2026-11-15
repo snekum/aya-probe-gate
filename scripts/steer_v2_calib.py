@@ -255,8 +255,12 @@ def run_cost(engine, ctxs, S, path, batch):
     return {n: done[n] for n in S}
 
 
-def stage2_settings(S, cost, bar):
-    """The old reference, plus the strongest eligible strength at each (layer, position mode)."""
+def stage2_settings(S, cost, bar, probe_layer=None):
+    """The old reference, plus the strongest eligible strength at each (layer, position mode).
+
+    If no setting is eligible (Tiny Aya: even r 0.25 changes too many clean calls), the one that keeps
+    the most clean drafts goes on instead, so the rule's fallback (steer_v2_report.choose) has a
+    candidate; ties: the gentler strength, 'generated' before 'all', the layer nearest the probe's."""
     best = {}
     for n, st in S.items():
         if n == 'old' or cost[n]['kept'] < bar * cost[n]['n']:
@@ -264,6 +268,10 @@ def stage2_settings(S, cost, bar):
         k = (st['layer'], st.get('positions', 'all'))
         if k not in best or st['r'] > S[best[k]]['r']:
             best[k] = n
+    if not best:
+        n = min((n for n in S if n != 'old'), key=lambda n: (-cost[n]['kept'] / cost[n]['n'], S[n]['r'],
+                S[n].get('positions', 'all') != 'generated', abs(S[n]['layer'] - (probe_layer or S[n]['layer']))))
+        best[None] = n
     return ['old'] + sorted(best.values(), key=lambda n: (S[n]['layer'], S[n].get('positions', 'all')))
 
 
@@ -331,7 +339,7 @@ def main():
     ctxs = cost_contexts(list(map(json.loads, open(os.path.join(base, 'episodes.jsonl'), encoding='utf-8'))), famd, a.cost_n)
     json.dump([{k: x[k] for k in ('family', 'i', 'kind')} for x in ctxs], open(os.path.join(a.out, 'cost_sample.json'), 'w'), indent=1)
     cost = run_cost(engine, ctxs, S, os.path.join(a.out, 'cost.jsonl'), a.cost_batch)
-    names = stage2_settings(S, cost, a.cost_bar)
+    names = stage2_settings(S, cost, a.cost_bar, engine.best['layer'])
     R.log(f'stage 2: {len(names)} settings on whole tasks: {", ".join(names)}')
     runs = whole_tasks(names)
     finish(a.out, runs, famd, [f['id'] for f in fam_list], engine.best['layer'], cost, a.cost_bar,

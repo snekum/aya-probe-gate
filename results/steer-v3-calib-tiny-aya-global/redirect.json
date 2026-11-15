@@ -1,0 +1,31 @@
+{
+ "kind": "pairs",
+ "layer": 15,
+ "alpha": 0.6871285735807762,
+ "r": 0.25,
+ "chosen_from": "steer_v2_calib.py",
+ "positions": "generated",
+ "ladder": [
+  {
+   "r": 0.5,
+   "alpha": 1.3742571471615523
+  },
+  {
+   "r": 0.75,
+   "alpha": 2.0613857207423285
+  },
+  {
+   "r": 1.0,
+   "alpha": 2.7485142943231047
+  },
+  {
+   "r": 1.25,
+   "alpha": 3.435642867903881
+  },
+  {
+   "r": 1.5,
+   "alpha": 4.122771441484657
+  }
+ ],
+ "vectors": "results/steer-v2-tiny-aya-global/redirect_vectors.pt"
+}

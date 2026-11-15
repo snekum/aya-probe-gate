@@ -1,0 +1,22 @@
+
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/290 [00:00<02:14,  2.15it/s]
+Loading weights:  37%|███▋      | 107/290 [00:00<00:00, 249.05it/s]
+Loading weights:  58%|█████▊    | 168/290 [00:00<00:00, 273.15it/s]
+Loading weights:  74%|███████▍  | 216/290 [00:00<00:00, 279.82it/s]
+Loading weights:  89%|████████▊ | 257/290 [00:01<00:00, 284.65it/s]
+Loading weights: 100%|██████████| 290/290 [00:01<00:00, 247.18it/s]
+run e8d80018: 240 rows, 4 shards, 240 rows to do. layers=[11, 15, 19] max_tokens=8192
+  shard 1: 25/60 rows
+  shard 1: 50/60 rows
+shard 1/4: 60/60 ok, 0 shortened (0 after running out of memory), 0.15s/row, about 0 min left
+  shard 2: 25/60 rows
+  shard 2: 50/60 rows
+shard 2/4: 60/60 ok, 0 shortened (0 after running out of memory), 0.15s/row, about 0 min left
+  shard 3: 25/60 rows
+  shard 3: 50/60 rows
+shard 3/4: 60/60 ok, 0 shortened (0 after running out of memory), 0.15s/row, about 0 min left
+  shard 4: 25/60 rows
+  shard 4: 50/60 rows
+shard 4/4: 60/60 ok, 0 shortened (0 after running out of memory), 0.15s/row, about 0 min left
+done

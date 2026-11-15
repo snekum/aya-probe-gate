@@ -1,0 +1,4 @@
+layer 13: 120 pairs, size 0.31 of the hidden state, held-out families pointing the right way 100%
+layer 17: 120 pairs, size 0.35 of the hidden state, held-out families pointing the right way 100%
+layer 21: 120 pairs, size 0.36 of the hidden state, held-out families pointing the right way 100%
+cos_with_old_vector {"plain": {"13": 0.1112077385187149, "17": 0.12292439490556717, "21": 0.1466478705406189}, "masked": {"13": 0.1150745302438736, "17": 0.10689409077167511, "21": 0.1395110934972763}}
