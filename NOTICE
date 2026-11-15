@@ -33,6 +33,14 @@ The repo mixes our own work with data and models from others. Each part keeps it
    Acceptable Use Policy (https://docs.cohere.com/docs/c4ai-acceptable-use-policy). We release
    these files under the same terms: non-commercial use, with credit to Cohere Labs.
 
+   Other data and models used in the one-step test. Prompts and replies from these appear in
+   results/ (xstest_*.jsonl and the steering logs):
+   - XSTest (walledai/XSTest; CC-BY-4.0): the chat over-refusal test.
+   - AdvBench (walledai/AdvBench; MIT) and Alpaca (tatsu-lab/alpaca; CC-BY-NC-4.0): the harmful
+     and harmless prompts behind the CAST refusal direction.
+   - WildGuard (allenai/wildguard; Apache-2.0): the judge for XSTest replies.
+   - ModernBERT-base (answerdotai/ModernBERT-base; Apache-2.0): the text-classifier baseline.
+
 4. Tools we used but don't redistribute
    - SafeTune, AuditKIT and CuratorKIT by Lexsi Labs (https://github.com/Lexsi-Labs), installed
      with pip at the commits pinned in requirements.txt and requirements-gpu.txt, under the Lexsi
