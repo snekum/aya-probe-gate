@@ -3,7 +3,7 @@
 __pycache__/
 *.pyc
 
-# ToolSafe is fetched at a pinned commit (see README, "Set up"). Its scripts contain hardcoded
+# ToolSafe is fetched at a pinned commit (see REPRODUCE.md, "Set up"). Its scripts contain hardcoded
 # API keys, so it never goes in this repo.
 vendor/ToolSafe/
 

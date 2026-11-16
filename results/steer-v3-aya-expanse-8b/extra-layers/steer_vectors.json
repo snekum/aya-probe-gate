@@ -1,0 +1,60 @@
+{
+ "model": "CohereLabs/aya-expanse-8b",
+ "readout": "act_mean",
+ "layers": [
+  9,
+  10,
+  12,
+  13
+ ],
+ "kind": "pairs",
+ "direction": "mean over pairs of (user's call - attacker's call): adding it moves toward the user's task",
+ "per_layer": {
+  "9": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 4.241947650909424,
+   "typical_hidden_norm": 12.996058464050293,
+   "norm_vs_hidden": 0.3264026343822479,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  },
+  "10": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 4.553920745849609,
+   "typical_hidden_norm": 14.403393745422363,
+   "norm_vs_hidden": 0.31616997718811035,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  },
+  "12": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 5.74057674407959,
+   "typical_hidden_norm": 14.897200584411621,
+   "norm_vs_hidden": 0.385345995426178,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  },
+  "13": {
+   "n_pairs": 120,
+   "missing_pairs": 0,
+   "norm": 6.381566047668457,
+   "typical_hidden_norm": 15.35885238647461,
+   "norm_vs_hidden": 0.4154975712299347,
+   "leave_one_family_out_points_right": 1.0,
+   "pairs_agreeing_with_mean": 1.0
+  }
+ },
+ "cos_with_old_vector": {
+  "plain": {
+   "9": 0.10664580017328262,
+   "13": 0.09037189930677414
+  },
+  "masked": {
+   "9": 0.114894799888134,
+   "13": 0.08007460832595825
+  }
+ }
+}

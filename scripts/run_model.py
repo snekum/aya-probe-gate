@@ -23,8 +23,8 @@ Steps (--steps, default all but text):
 Everything is fixed in advance (DECISIONS.md, 2026-11-10, "Rerun on Aya Expanse 8B"): same data,
 splits, threshold, prompt limits, calibration grid and objective. Don't tune anything to the results.
 
-Usage (Linux, from the repo root, after the set-up in README.md):
-  export HF_TOKEN=...      # an account that accepted the model's licence and the datasets in README
+Usage (Linux, from the repo root, after the set-up in REPRODUCE.md):
+  export HF_TOKEN=...      # an account that accepted the model's licence and the datasets in REPRODUCE.md
   python scripts/run_model.py --model CohereLabs/aya-expanse-8b --name aya-expanse-8b --gpus 0
   python scripts/run_model.py ... --steps gate,judge,audit     # pick up from a step
 """
@@ -66,7 +66,7 @@ def main():
     steps = a.steps.split(',')
     bad = [s for s in steps if s not in STEPS]
     assert not bad, f'unknown steps {bad}; choose from {STEPS}'
-    assert os.path.isdir(os.path.join(ROOT, a.tsbench)), f'{a.tsbench} not found: clone ToolSafe first (README, "Set up")'
+    assert os.path.isdir(os.path.join(ROOT, a.tsbench)), f'{a.tsbench} not found: clone ToolSafe first (REPRODUCE.md, "Set up")'
     if not os.environ.get('HF_TOKEN'):
         log('NOTE: HF_TOKEN is not set; gated models and datasets will fail to download')
     py = sys.executable
@@ -139,7 +139,7 @@ def main():
         log(f'agent: {n_run} test steps run, {len(rows) - n_run - len(oom)} over 4,096 tokens (long-step pass)')
         if oom:
             log(f'WARNING: {len(oom)} steps ran out of GPU memory and moved to the long pass, so the test set '
-                f'differs from the Tiny Aya run: {oom[:5]}. See README, "Run it on another model".')
+                f'differs from the Tiny Aya run: {oom[:5]}. See REPRODUCE.md, "Run it on another model".')
         cfg = json.load(open(os.path.join(out, 'redirect.json')))
         log(f"steer-back setting picked by calibration: {cfg['kind']} @ {cfg['alpha']}, layer {cfg['layer']}")
 

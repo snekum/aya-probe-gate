@@ -218,12 +218,23 @@ def generate_batch(aya, prompts, max_new_tokens):
         return [x for p in prompts for x in generate_batch(aya, [p], max_new_tokens)]
 
 
-def generate_steered(aya, prompts, max_new_tokens, layer, vec, alpha, batch):
-    """Generate with SafeTune's CASTModel steering switched on for every prompt.
+def generate_steered(aya, prompts, max_new_tokens, layer, vec, alpha, batch, positions='all'):
+    """Generate with the steer-back vector added at one layer.
+
+    positions='all': SafeTune's CASTModel hook, which adds the vector at every position, the prompt
+    included (tool list, history, injected text). Every result before 2026-11-14 used this.
+    positions='generated': only from the last prompt position on (the token that produces the first
+    new token, then every generated token), as in the original contrastive activation addition
+    (Rimsky et al. 2023), which adds after the prompt. The prompt's own hidden states, which later
+    tokens attend to, are left alone. Needs the KV cache (HF generate's default): the prefill pass is
+    the only one longer than one token.
 
     The decision to steer was already made (the probe fired on Aya's draft), so the steering hooks
     are installed directly, without CAST's own gate pass over the prompt.
     """
+    if positions == 'generated':
+        return _generate_steered_after_prompt(aya, prompts, max_new_tokens, layer, vec, alpha, batch)
+    assert positions == 'all', positions
     from safetune.interventions.steer import CASTModel
     cast = CASTModel(aya.model, {layer: vec}, alpha=alpha, probe_layer=layer,
                      probe_weights=torch.zeros_like(vec), probe_bias=10.0, threshold=0.5)
@@ -234,6 +245,27 @@ def generate_steered(aya, prompts, max_new_tokens, layer, vec, alpha, batch):
             outs += generate_batch(aya, prompts[i:i + batch], max_new_tokens)
     finally:
         cast.remove()
+    return outs
+
+
+def _generate_steered_after_prompt(aya, prompts, max_new_tokens, layer, vec, alpha, batch):
+    """generate_steered with positions='generated'. Prompts are left-padded, so the last position of
+    the prefill pass is every row's last real prompt token."""
+    def hook(_m, _i, out):
+        h = out[0] if isinstance(out, tuple) else out
+        v = (alpha * vec).to(dtype=h.dtype, device=h.device)
+        if h.shape[1] > 1:   # prefill: only the last prompt position
+            h = torch.cat([h[:, :-1], h[:, -1:] + v], dim=1)
+        else:                # one new token per pass (KV cache)
+            h = h + v
+        return (h,) + tuple(out[1:]) if isinstance(out, tuple) else h
+    handle = aya.layers[layer].register_forward_hook(hook)
+    outs = []
+    try:
+        for i in range(0, len(prompts), batch):
+            outs += generate_batch(aya, prompts[i:i + batch], max_new_tokens)
+    finally:
+        handle.remove()
     return outs
 
 
